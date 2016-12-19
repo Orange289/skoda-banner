@@ -1,0 +1,218 @@
+@keyframes show_logo {
+  0%, 90% {
+    width: 0;
+    height: 0; }
+  97% {
+    width: 35vh;
+    height: 34vh; }
+  100% {
+    width: 32vh;
+    height: 31vh; } }
+
+@keyframes slogan_1 {
+  0%, 60% {
+    transform: translateY(-1500%); }
+  90% {
+    transform: translateY(40%); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes slogan_2 {
+  0%, 70% {
+    transform: translateX(1000%); }
+  90% {
+    transform: translateX(-10%); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes slogan_3 {
+  0%, 70% {
+    transform: translateY(1000%); }
+  85% {
+    transform: translateY(-10%);
+    transform: translateX(60%); }
+  95% {
+    transform: translateY(0); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes slogan_4 {
+  0%, 70% {
+    transform: translateX(500%); }
+  90% {
+    transform: translateX(-7%); }
+  100% {
+    transform: translateX(0); } }
+
+.page-body {
+  margin: 0;
+  padding: 0; }
+
+.page-body__info {
+  position: absolute;
+  top: 11%;
+  left: 48%; }
+
+.page-body__logo {
+  position: absolute;
+  top: 10%;
+  left: 82%;
+  height: 31vh;
+  width: 32vh;
+  animation: show_logo 4s; }
+
+.page-body__slogan {
+  position: absolute;
+  animation-timing-function: ease-in; }
+  .page-body__slogan--1 {
+    top: 48%;
+    left: 70%;
+    height: 4vh;
+    width: 23vh;
+    animation: slogan_1 6s; }
+  .page-body__slogan--3 {
+    top: 64%;
+    left: 56%;
+    height: 4vh;
+    width: 41vh;
+    animation: slogan_3 7.5s; }
+  .page-body__slogan--2 {
+    top: 53%;
+    left: 70%;
+    height: 8vh;
+    width: 48vh;
+    animation: slogan_2 7s; }
+  .page-body__slogan--4 {
+    top: 64%;
+    left: 77%;
+    height: 8vh;
+    width: 41vh;
+    animation: slogan_4 8s; }
+
+.active-area {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  background: url("../img/bg.png") 50% 100% no-repeat;
+  background-size: 100% 100%;
+  margin: 0;
+  padding: 0; }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+.earth {
+  position: absolute;
+  top: 65%;
+  left: 18%;
+  overflow: hidden;
+  background: url("../img/earth.png") no-repeat;
+  width: 100vh;
+  height: 100vh;
+  background-size: 100vh 100vh;
+  animation-name: rotate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+@keyframes downhill_girl {
+  0%, 60% {
+    transform: translateY(-200%); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes body_rotate {
+  0% {
+    transform: rotate(15deg); }
+  50% {
+    transform: rotate(-15deg); }
+  100% {
+    transform: rotate(15deg); } }
+
+.girl {
+  position: absolute;
+  top: 47%;
+  left: 26%;
+  z-index: 2;
+  animation: downhill_girl 3s;
+  animation-timing-function: ease; }
+  .girl img {
+    height: 52vh;
+    width: 44vh; }
+
+.girl__head {
+  position: absolute;
+  top: -15%;
+  left: 21%;
+  animation: body_rotate 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+  .girl__head img {
+    height: 26vh;
+    width: 26vh; }
+
+.girl__hand {
+  position: absolute;
+  top: -16%;
+  left: 8%;
+  animation: body_rotate 0.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: center bottom; }
+  .girl__hand img {
+    height: 11vh;
+    width: 7vh; }
+  .girl__hand--right {
+    top: -17%;
+    left: 80%;
+    transform: scale(-1, 1); }
+
+@keyframes downhill_boy {
+  0%, 70% {
+    transform: translateY(-200%); }
+  100% {
+    transform: translateY(0); } }
+
+.boy {
+  position: absolute;
+  top: 38%;
+  left: 40%;
+  z-index: 1;
+  animation: downhill_boy 3s;
+  animation-timing-function: ease; }
+  .boy img {
+    height: 60vh;
+    width: 45vh; }
+
+.boy__head {
+  position: absolute;
+  top: -18%;
+  left: 24%;
+  animation: body_rotate 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+  .boy__head img {
+    height: 30vh;
+    width: 26vh; }
+
+.boy__hand {
+  position: absolute;
+  top: -24%;
+  left: 4%;
+  animation: body_rotate 0.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: center bottom; }
+  .boy__hand img {
+    height: 14vh;
+    width: 10vh; }
+  .boy__hand--right {
+    top: -19%;
+    left: 82%;
+    transform: scale(-1, 1); }
